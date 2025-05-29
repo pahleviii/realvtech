@@ -1,0 +1,93 @@
+/* Root Variabel Warna */
+:root {
+  --primary: #fe7c04;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Global Style */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+/* Paragraf */
+p {
+  color: var(--black);
+  font-size: 1rem;
+}
+
+/* Tombol Utama */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e76f00;
+}
+
+/* Container & Section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+/* Section dengan Latar Putih (default) */
+.section-white {
+  background-color: var(--white);
+}
+
+/* Section dengan Latar Oranye */
+.section-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2rem 1rem;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Text Size */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+  }
+}
