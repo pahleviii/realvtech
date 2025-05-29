@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Judul Halaman -->
+  <title>Realvtech | Solusi Digital Kreatif untuk Bisnis Modern</title>
+
+  <!-- Deskripsi untuk SEO -->
+  <meta name="description" content="Realvtech menyediakan layanan pembuatan website, desain UI/UX, animasi, mobile apps, dan game untuk mahasiswa, startup, dan UMKM." />
+
+  <!-- Kata kunci (opsional SEO lama) -->
+  <meta name="keywords" content="realvtech, jasa website, jasa desain, digital agency, UMKM, startup, mahasiswa, pembuatan aplikasi, UI UX, animasi" />
+
+  <!-- Open Graph (untuk media sosial) -->
+  <meta property="og:title" content="Realvtech | Solusi Digital Kreatif" />
+  <meta property="og:description" content="Bangun brand digitalmu bersama Realvtech. Kami bantu dari desain hingga pengembangan aplikasi." />
+  <meta property="og:image" content="https://example.com/img/thumb.jpg" />
+  <meta property="og:url" content="https://realvtech.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS (CDN jika kamu belum pakai bundler) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+  <body class="bg-white text-gray-800 font-sans" style="scroll-behavior: smooth">
+    
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+         <!-- Logo + Brand -->
+    <div class="flex items-center space-x-2">
+      <img src="/assets/img/Logo.png" alt="Logo Realvtech" class="h-10 w-auto" />
+    </div>
+
+       <!-- Hamburger Button (Mobile Only) -->
+    <button id="menu-btn" class="md:hidden text-3xl text-orange-500 focus:outline-none">
+      ☰
+    </button>
+
+       <!-- Backdrop -->
+    <div id="backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"></div>
+
+         <!-- Navigation Links -->
+<nav id="menu" class="hidden absolute top-16 left-0 w-full bg-white border-t border-gray-200 md:static md:block md:border-none md:bg-transparent md:w-auto">
+  <div class="flex flex-col md:flex-row md:items-center md:space-x-4 px-4 py-2 md:p-0">
+    <a href="#home" class="relative py-2 text-gray-700 hover:text-orange-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-orange-500 after:transition-all after:duration-300">
+      Home
+    </a>
+    <a href="#about" class="relative py-2 text-gray-700 hover:text-orange-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-orange-500 after:transition-all after:duration-300">
+      Tentang
+    </a>
+    <a href="#services" class="relative py-2 text-gray-700 hover:text-orange-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-orange-500 after:transition-all after:duration-300">
+      Layanan
+    </a>
+    <a href="#blog" class="relative py-2 text-gray-700 hover:text-orange-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-orange-500 after:transition-all after:duration-300">
+      Blog
+    </a>
+    <a href="#contact" class="relative py-2 text-gray-700 hover:text-orange-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-orange-500 after:transition-all after:duration-300">
+      Kontak
+    </a>
+  </div>
+</nav>
+    </header>
+
+<!-- Hero Section -->
+<section id="home" class="bg-white py-20">
+  <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10">
+    
+    <!-- Teks -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        Solusi Digital Elegan<br />
+        untuk Bisnis Masa Kini
+      </h2>
+      <p class="mt-4 text-gray-600 text-lg">
+        Realvtech hadir membantu UMKM, startup, dan mahasiswa membangun website, desain UI/UX, animasi, hingga aplikasi mobile.
+      </p>
+      <a
+        href="https://wa.me/6285748913967" 
+        target="_blank"
+        class="inline-block mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition"
+      >
+        Konsultasi Sekarang
+      </a>
+    </div>
+
+    <!-- Gambar / Ilustrasi -->
+    <div class="md:w-1/2">
+      <img src="/assets/img/Hero.png" alt="Ilustrasi Digital Agency" class="w-full max-w-md mx-auto" />
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section id="about" class="bg-gray-50 py-20">
+  <div class="container mx-auto px-4 text-center md:text-left">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+      Tentang Kami
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Ilustrasi -->
+      <div class="md:w-1/2">
+        <img src="/assets/img/about.png" alt="Tentang Realvtech" loading="lazyclass=" />
+      </div>
+
+      <!-- Teks -->
+      <div class="md:w-1/2 text-gray-700 space-y-4">
+        <p>
+          Realvtech adalah penyedia jasa digital yang berdiri untuk membantu
+          <strong>mahasiswa, UMKM, dan startup</strong> menghadirkan solusi teknologi
+          yang <strong>elegan dan efektif</strong>.
+        </p>
+        <p>
+          Kami fokus pada <strong>kualitas visual</strong>, kemudahan penggunaan, dan 
+          pengalaman pengguna yang maksimal. Dengan pendekatan minimalis modern, 
+          kami hadir untuk mewujudkan ide digital Anda.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 mt-4">
+          <li>Tim kreatif dan profesional</li>
+          <li>Harga transparan & fleksibel</li>
+          <li>Support ramah & fast response</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Layanan Kami -->
+<section id="services" class="bg-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Layanan Kami
+    </h2>
+    <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+      Kami menyediakan berbagai layanan digital untuk membantu Anda membangun solusi modern dan profesional.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Kartu Layanan -->
+      <div class="border rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-orange-500 mb-2">Pembuatan Website</h3>
+        <p class="text-gray-600 mb-4">Website profesional & responsif untuk bisnis atau personal.</p>
+        <p class="font-bold text-gray-800">Mulai dari Rp500.000</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-orange-500 mb-2">UI/UX Design</h3>
+        <p class="text-gray-600 mb-4">Desain antarmuka modern dan ramah pengguna.</p>
+        <p class="font-bold text-gray-800">Mulai dari Rp200.000</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-orange-500 mb-2">Animasi 2D/3D</h3>
+        <p class="text-gray-600 mb-4">Animasi promosi, edukasi, atau branding kreatif.</p>
+        <p class="font-bold text-gray-800">Mulai dari Rp750.000</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-orange-500 mb-2">Mobile Apps</h3>
+        <p class="text-gray-600 mb-4">Aplikasi Android/iOS untuk startup, UMKM, dan edukasi.</p>
+        <p class="font-bold text-gray-800">Mulai dari Rp1.000.000</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-orange-500 mb-2">Game Development</h3>
+        <p class="text-gray-600 mb-4">Game 2D/3D kreatif untuk hiburan atau pembelajaran.</p>
+        <p class="font-bold text-gray-800">Mulai dari Rp1.500.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Keunggulan Realvtech -->
+<section id="keunggulan" class="bg-gray-50 py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Kenapa Memilih Realvtech?
+    </h2>
+    <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+      Kami berkomitmen memberikan hasil terbaik dengan pendekatan profesional dan personal.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Keunggulan 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-orange-500 text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold mb-2">Cepat & Responsif</h3>
+        <p class="text-gray-600">Kami menghargai waktu klien dan menyelesaikan proyek sesuai timeline.</p>
+      </div>
+
+      <!-- Keunggulan 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-orange-500 text-4xl mb-4">🎨</div>
+        <h3 class="text-xl font-semibold mb-2">Desain Elegan</h3>
+        <p class="text-gray-600">Tampilan modern dan bersih yang mencerminkan profesionalitas brand Anda.</p>
+      </div>
+
+      <!-- Keunggulan 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-orange-500 text-4xl mb-4">🤝</div>
+        <h3 class="text-xl font-semibold mb-2">Support Ramah</h3>
+        <p class="text-gray-600">Kami siap bantu dan menjawab kebutuhan Anda dengan pelayanan terbaik.</p>
+      </div>
+
+      <!-- Keunggulan 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-orange-500 text-4xl mb-4">💡</div>
+        <h3 class="text-xl font-semibold mb-2">Solusi Inovatif</h3>
+        <p class="text-gray-600">Kami selalu mencari pendekatan kreatif dan fungsional untuk setiap proyek.</p>
+      </div>
+
+      <!-- Keunggulan 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-orange-500 text-4xl mb-4">📱</div>
+        <h3 class="text-xl font-semibold mb-2">Multi-Platform</h3>
+        <p class="text-gray-600">Kami membuat produk yang bekerja optimal di semua perangkat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Preview Blog -->
+<section id="blog" class="bg-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Artikel Terbaru
+    </h2>
+    <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+      Temukan insight dan edukasi seputar teknologi, desain, dan pengembangan digital dari tim Realvtech.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <!-- Artikel 1 -->
+      <div class="rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+        <img src="/assets/img/blog1.png" alt="Tips Memilih Website" loading="lazy" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800">Tips Memilih Jenis Website untuk Bisnis Anda</h3>
+          <p class="text-gray-600 mb-4 text-sm">Pelajari perbedaan antara landing page, company profile, dan e-commerce.</p>
+          <a href="#" class="text-orange-500 font-medium hover:underline text-sm">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <!-- Artikel 2 -->
+      <div class="rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+        <img src="/assets/img/blog2.png" alt="UI/UX Design" loading="lazy" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800">Kenapa UI/UX Design Penting untuk Produk Digital?</h3>
+          <p class="text-gray-600 mb-4 text-sm">Desain bukan cuma soal tampilan, tapi pengalaman. Temukan alasannya di sini.</p>
+          <a href="#" class="text-orange-500 font-medium hover:underline text-sm">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <!-- Artikel 3 -->
+      <div class="rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+        <img src="/assets/img/blog3.png" alt="Digital Branding" loading="lazy class=" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800">Membangun Digital Branding yang Konsisten</h3>
+          <p class="text-gray-600 mb-4 text-sm">Strategi visual dan konten untuk membangun brand awareness yang kuat.</p>
+          <a href="#" class="text-orange-500 font-medium hover:underline text-sm">Baca Selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Akhir -->
+<section class="bg-orange-500 text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Memulai Proyek Anda?</h2>
+    <p class="mb-8 text-lg max-w-xl mx-auto">
+      Hubungi kami sekarang dan wujudkan ide digital Anda bersama Realvtech.
+    </p>
+    <a href="https://wa.me/6285748913967" target="_blank" class="bg-white text-orange-500 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+      Hubungi via WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="contact" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Hubungi Kami</h2>
+    <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+      Kami siap membantu Anda membuat solusi digital seperti website, aplikasi, desain UI/UX, dan lainnya. Hubungi kami melalui kontak berikut:
+    </p>
+    <div class="flex flex-col md:flex-row justify-center gap-6 mb-8">
+      <a href="https://wa.me/6285748913967" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full shadow-md transition">
+        📞 WhatsApp (Chat Only)
+      </a>
+      <a href="https://instagram.com/realv.tech" target="_blank" class="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-full shadow-md transition">
+        📷 Instagram: @realv.tech
+      </a>
+    </div>
+    <p class="text-gray-500 text-sm">Kami akan membalas pesan Anda secepat mungkin.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-200 py-6">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+    <p class="text-gray-600 text-sm">&copy; 2025 Realvtech. All rights reserved.</p>
+    <div class="flex gap-4 mt-2 md:mt-0">
+      <a href="#home" class="text-gray-600 hover:text-orange-500 transition">Beranda</a>
+      <a href="#services" class="text-gray-600 hover:text-orange-500 transition">Layanan</a>
+     <!-- <a href="#portfolio" class="text-gray-600 hover:text-orange-500 transition">Portofolio</a> -->
+      <a href="#blog" class="text-gray-600 hover:text-orange-500 transition">Blog</a>
+      <a href="#contact" class="text-gray-600 hover:text-orange-500 transition">Kontak</a>
+    </div>
+  </div>
+</footer>
+
+
+</footer>
+
+<!-- Tombol WhatsApp -->
+<a href="https://wa.me/6285748913967" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg z-50">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 0C5.37 0 0 5.373 0 12c0 2.1.547 4.11 1.572 5.895L0 24l6.297-1.654C8.058 23.44 10.008 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.286 17.127c-.26.73-1.522 1.39-2.11 1.479-.545.082-1.24.118-2.004-.129-.463-.144-1.057-.343-1.821-.674a11.937 11.937 0 01-4.517-4.024c-.387-.572-1.06-1.527-1.06-2.836 0-1.31.683-1.946.926-2.211.243-.265.531-.331.708-.331.177 0 .354.001.508.009.163.009.382-.062.597.456.215.517.728 1.786.793 1.914.064.128.108.278.021.45-.087.173-.13.278-.255.435s-.267.295-.381.393c-.125.108-.255.225-.109.495.145.27.641 1.059 1.376 1.717.946.875 1.745 1.147 2.016 1.276.27.129.425.108.582-.065.157-.173.666-.778.844-1.043.177-.265.354-.218.597-.13.243.087 1.538.726 1.8.859.26.13.434.195.497.304.064.108.064.623-.195 1.352z"/>
+  </svg>
+</a>
+
+  </body>
+
+  <script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</html>
